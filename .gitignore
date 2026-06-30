@@ -1,0 +1,14 @@
+
+# AIFT generated runtime state
+.aift/capabilities.json
+.aift/federation-snapshot.json
+.aift/providers.json
+.aift/repos.json
+.aift/workflows.json
+registry/*.cypher
+registry/*.dot
+registry/*.graphml
+registry/*.json
+registry/*.rdf
+reports/
+var/events/
