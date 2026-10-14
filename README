@@ -20,3 +20,19 @@ please report them on the
 For complete documentation see [the manual](http://www.nongnu.org/chktex/ChkTeX.pdf).
 
 ChkTeX is released under the GNU Public License version 2 or greater.
+
+
+Building from source
+--------------------
+
+This checkout contains Autotools source files rather than a pre-generated
+`configure` script. On a system with a C compiler, Make, Perl 5,
+Autoconf, and Automake (including aclocal), run:
+
+    sh ./autogen.sh
+    ./configure && make
+
+The bootstrap command must exit nonzero if any Autotools generation step
+fails. Do not continue to `./configure` or `make` after such a failure.
+These steps generate and compile ChkTeX; they are not a substitute for
+running the resulting checker on actual LaTeX input.

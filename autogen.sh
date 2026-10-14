@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# A failed autotools step must abort before reporting bootstrap success.
+set -e
+
 ACLOCAL="aclocal -I m4"
 AUTOHEADER="autoheader"
 AUTOMAKE="automake --add-missing --copy --foreign"
@@ -45,5 +48,5 @@ else
 fi
 
 echo
-echo 'run "./configure ; make"'
+echo 'run "./configure && make"'
 echo
